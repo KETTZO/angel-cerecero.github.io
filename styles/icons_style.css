@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dzzla4');
+  src:  url('fonts/icomoon.eot?dzzla4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dzzla4') format('truetype'),
+    url('fonts/icomoon.woff?dzzla4') format('woff'),
+    url('fonts/icomoon.svg?dzzla4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github-square:before {
+  content: "\e914";
+}
+.icon-document-file-sql:before {
+  content: "\e900";
+}
+.icon-typescript:before {
+  content: "\e919";
+  color: #007acc;
+}
+.icon-unrealengine:before {
+  content: "\e918";
+}
+.icon-php:before {
+  content: "\e917";
+  color: #777bb4;
+}
+.icon-microsoftexcel:before {
+  content: "\e916";
+  color: #217346;
+}
+.icon-spring:before {
+  content: "\e915";
+  color: #6db33f;
+}
+.icon-postgresql:before {
+  content: "\e901";
+  color: #336791;
+}
+.icon-node-dot-js:before {
+  content: "\e902";
+  color: #393;
+}
+.icon-react:before {
+  content: "\e905";
+  color: #61dafb;
+}
+.icon-android:before {
+  content: "\e906";
+  color: #3ddc84;
+}
+.icon-git:before {
+  content: "\e907";
+  color: #f05032;
+}
+.icon-html5:before {
+  content: "\e908";
+  color: #e34f26;
+}
+.icon-css3:before {
+  content: "\e90a";
+  color: #1572b6;
+}
+.icon-javascript:before {
+  content: "\e90b";
+  color: #f7df1e;
+}
+.icon-java:before {
+  content: "\e90c";
+  color: #007396;
+}
+.icon-python:before {
+  content: "\e90d";
+  color: #3776ab;
+}
+.icon-cassandra:before {
+  content: "\e90e";
+  color: #1287b1;
+}
+.icon-bootstrap:before {
+  content: "\e90f";
+  color: #563d7c;
+}
+.icon-visualstudiocode:before {
+  content: "\e910";
+  color: #007acc;
+}
+.icon-visualstudio:before {
+  content: "\e911";
+  color: #5c2d91;
+}
+.icon-mongodb:before {
+  content: "\e912";
+  color: #47a248;
+}
+.icon-mysql:before {
+  content: "\e913";
+  color: #4479a1;
+}
+.icon-office:before {
+  content: "\e903";
+}
+.icon-newspaper:before {
+  content: "\e904";
+}
+.icon-blog:before {
+  content: "\e909";
+}
+.icon-podcast:before {
+  content: "\e91c";
+}
+.icon-address-book:before {
+  content: "\e944";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-user-check:before {
+  content: "\e975";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-equalizer2:before {
+  content: "\e993";
+}
+.icon-hammer:before {
+  content: "\e996";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+.icon-notification:before {
+  content: "\ea08";
+}
+.icon-terminal:before {
+  content: "\ea81";
+}
+.icon-mail3:before {
+  content: "\ea85";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-android1:before {
+  content: "\eac0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}

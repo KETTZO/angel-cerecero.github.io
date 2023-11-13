@@ -1,0 +1,680 @@
+html {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background-color: #262626;
+}
+html {
+    background-image: radial-gradient(circle, #0000002d 5%, transparent 20%);
+    background-size: 30px 30px;
+
+}
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 10px;
+    background-color: #e8e8e8;
+    /* Otros estilos del body según tus necesidades */
+    /*background: #212121;*/
+    /*background: #19101B;*/
+    background-color: transparent;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container-nav {
+    display: flex;
+    flex-direction: column; /* Alinea verticalmente los elementos */
+    justify-content: flex-end; /* Alinea la barra en la parte inferior */
+    align-items: center; /* Centra horizontalmente */
+}
+.nav {
+    display: flex;
+    background-color: #262626;
+    border: #f7f7f728 1px solid;
+    padding: 33px;
+    height: 70px;
+    width: 30%;
+    /*width: 470px;*/
+    position: sticky;
+    bottom: 50px;
+    align-self: center;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.664) 0px 5px 15px;
+    border-radius: 100px;
+    z-index: 2;
+    transition: 0.3s ease;
+    
+}
+.nav:hover{
+    transform: scale(1.06);
+    bottom: 60px;
+    /*width: 550px;*/
+    width: 42%;
+}
+.nav-menu {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu-item {
+    transition: 0.5 ease;
+}
+.nav-text{
+    color: #a5a5a5;
+    text-decoration: none;
+    font-size: 35px;    
+    /*background-color: #d8993b;*/
+    background-color: #161616;
+    border-radius: 10px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-text:hover{color: black;}
+.nav-menu-item:active {
+    transform: translateY(-50px); 
+    transition: 0.3s ease; /* Aplicar la transición también en :active */
+}
+.nav-hover{
+    /*padding: 8px 12px;*/
+    /*margin: 8px 12px;*/
+    transition: 0.3s ease;
+
+}
+.nav-menu-item:hover .nav-hover{
+    color: #a5a5a5;
+    border-radius: 50%;
+    transition: 0.15s ease;
+}
+.nav-menu-item:hover {
+    color: #a5a5a5;
+    /*font-size:70px;*/
+    transform: translateY(-30px); 
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-30px) scale(2);
+    transition: 0.15s ease;
+}
+.tooltip_nav {
+    
+    visibility: hidden;
+    width: 80px;
+    background-color: rgba(0,0,0,0.0);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 1px;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -41px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.2s;
+    
+}
+.nav-hover:hover .tooltip_nav {
+    visibility: visible;
+    bottom: 90%;
+    font-size: 15px;
+    background-color: rgba(0,0,0,0.5);
+    transform: scale(0.6);
+}
+.nav-menu-item {
+    transition: background-color 0.3s, transform 0.3s; /* Agregamos la transición */
+}
+.nav-menu li.hover-anterior{
+    transition: 0.3s;
+    transform: scale(1.5) translateY(-10px);
+    
+}
+.nav-menu li.hover-posterior{
+    transition: 0.3s;
+    transform: scale(1.5) translateY(-10px);
+}
+.welcome{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    height: 100vh;
+    padding: 35vh 0;
+}
+.welcome .greeting{
+    font-size: 20px;
+    margin-bottom: -12px;
+}
+.welcome .name{
+    color: #FF4500;
+    font-size: 70px;
+}
+.welcome .sub{
+    color: white;
+    font-size: 20px;
+}
+.welcome .sub span{
+    /*color: #00CED1;*/
+    /*background-color: #00CED1;*/
+    background-color: #FF4500;
+    padding: 5px;
+    border-radius: 10px;
+}
+.messageMe {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.messageMe a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #00CED1;
+    width: 50px;
+    height: 50px;
+    background-color: #161616;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    transition: all 0.2s;
+}
+.messageMe a .icon-github-square{
+    font-size: 39px;
+}
+.messageMe a span {
+    display: inline-block;
+    transition: 0.1s;
+}
+.messageMe a:hover span {
+    font-size: 50px;
+    
+}
+.messageMe a:hover .icon-github-square{
+    font-size: 60px;
+}
+#ABOUT h1{
+    color: #FF4500;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #00CED1;
+    width: 200px;
+}
+#ABOUT article{
+    margin-top: 50px;
+    color: white;
+    font-size: 25px;
+}
+#SKILLSET{
+    width: 100%;
+    color: white;
+    margin-top: 300px;
+}
+#SKILLSET .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+#SKILLSET h1{
+    color: #FF4500;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #00CED1;
+    width: 200px;
+}
+#SKILLSET article{
+    width: 320px;
+    height: 300px;
+    border: #f7f7f728 3px solid;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #262626;
+}
+#SKILLSET {
+    width: 100%;
+    font-size: 50px;
+}
+#SKILLSET  img{
+    width: 50px;
+}
+#SKILLSET  img, #SKILLSET  span{
+    filter: saturate(0%);
+    transition: 0.2s ease;
+}
+#SKILLSET  img:hover, #SKILLSET  span:hover{
+    filter: saturate(100%);  
+}
+#PROJECTS{
+    width: 100%;
+    color: white;
+    margin-top: 300px;
+}
+#PROJECTS h1{
+    color: #FF4500;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #00CED1;
+    width: 200px;
+    margin-bottom: 50px;
+}
+.project{
+    width: 330px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #161616;
+    border-radius: 15px;
+    
+}
+.projectImage{
+    width: 330px;
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    background-image: url("Images/NotesWeb2.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+.projectImage .textArea h3, .projectImage .textArea p{
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: 600ms;
+}
+.projectImage .textArea h3{
+    font-family: 'Kanit', sans-serif;
+    
+}
+.projectImage .textArea{
+    width: 80%;
+    margin: 0 auto;
+}
+.projectImage .textArea a{
+    position: relative;
+    top: 9vw;
+    margin-top: 20vw;
+    text-decoration: none;
+    display: inline block;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border: 2px solid #d8993b;
+    border-radius: 5px;
+    transition: 0.3s;
+    opacity: 0;
+    margin-top: 50vw;
+}
+.projectImage .textArea a:hover{
+    background-color: #d8993b;
+}
+.projectImage:hover{
+    
+    filter: brightness(30%) blur(2px);
+    transform: translateY(-3%);
+
+    transition: 0.3s;
+}
+.projectImage:hover .textArea h3, .projectImage:hover .textArea p, .projectImage:hover a{
+    opacity: 1;
+    transform: translateY(20%);
+    transition: 0.3s;
+}
+.grid-container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.center {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el contenido del div al centro */
+    height: 100%; /* Ocupa toda la altura disponible en la fila del grid */
+    width: 100%;
+}
+.card1 {
+    
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    background-color: #161616;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.image {
+    position: relative;
+    padding: 10px;
+}
+.image img {
+    height: 200px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Asegura que el overlay tenga el mismo tamaño que la imagen */
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.overlay:hover {
+    opacity: 1;
+}
+.overlay .text {
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    word-wrap: break-word;
+    transform: translateY(0); /* Restablece el desplazamiento a 0 en el estado normal */
+}
+.title {
+    padding: 10px;
+    font-size: 25px;
+    
+}
+.title span {
+    font-size: 20px;
+    
+}
+.title img{
+    width: 20px;
+    height: 20px;
+}
+.title .resources{
+    text-align: right;
+}
+.overlay a{
+    text-decoration: none;
+    color: #00CED1;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px; /* Agregamos margen para que no esté pegado a los bordes */
+    border-radius: 50%;
+    background-color: #161616;
+    transition: 0.1s;
+}
+.overlay a:hover{
+    font-size: 45px;
+    margin: 15px;
+}
+#JOBS{
+    width: 100%;
+    color: white;
+    margin-top: 300px;
+}
+#JOBS h1{
+    color: #FF4500;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #00CED1;
+    width: 200px;
+    margin-bottom: 50px;
+}
+#JOBS .job {
+    border-bottom: 2px solid #161616;
+    border-top: 2px solid #161616;
+    padding: 15px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+}
+#JOBS .job img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    float: left;
+}
+
+#JOBS .job .info {
+  padding: 20px;
+
+}
+#JOBS .job .info .company{
+    padding: 10px;
+    background-color: #FF4500;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+#JOBS .job .info p{
+    padding-top: 20px;
+}
+#JOBS .job .info p span{
+    color:#00CED1;
+}
+#CONTACT{
+    width: 100%;
+    height: 400px;
+    color: white;
+    margin-top: 300px;
+}
+#CONTACT h1{
+    color: #FF4500;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #00CED1;
+    width: 300px;
+    margin-bottom: 50px;
+}
+#CONTACT .messageMe {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#CONTACT .messageMe a {
+    text-decoration: none;
+    font-size: 60px;
+    color: #00CED1;
+    width: 80px;
+    height: 80px;
+    background-color: #161616;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    transition: all 0.2s;
+}
+#CONTACT .messageMe a .icon-github-square{
+    font-size: 75px;
+}
+#CONTACT .messageMe a span {
+    display: inline-block;
+    transition: 0.1s;
+}
+#CONTACT .messageMe a:hover span {
+    font-size: 80px;
+    
+}
+#CONTACT .messageMe a:hover .icon-github-square{
+    font-size: 95px;
+}
+
+@media (max-width:1250px) {
+    .nav{
+        width: 40%
+    }
+    .nav:hover{
+        width: 50%;
+    }
+}
+
+@media (max-width:1050px) {
+    .nav{
+        width: 60%
+    }
+    .nav:hover{
+        width: 70%;
+    }
+    #SKILLSET .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }   
+    #SKILLSET article{
+        margin: 10px;
+    }
+    #PROJECTS .grid-container{
+        grid-template-columns: repeat(2, 0fr);
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:750px) {
+    .nav{
+        width: 60%
+    }
+    .nav:hover{
+        width: 70%;
+    }
+    .nav-text{
+        font-size: 25px;    
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    #SKILLSET .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    #SKILLSET article{
+        width: 210px;
+        height: 430px;
+        border: #f7f7f728 3px solid;
+        text-align: center;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #262626;
+    }
+    #SKILLSET  img{
+        width: 40px;
+    }
+    #SKILLSET  span{
+        font-size: 40px;
+    }
+    #SKILLSET .grid-container{
+
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        gap: 10px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #PROJECTS .grid-container{
+        grid-template-columns: repeat(2, 0fr);
+        justify-content: center;
+    }
+}
+
+@media (max-width:580px) {
+    .nav{
+        width: 80%
+    }
+    .nav:hover{
+        width: 90%;
+    }
+    .nav-text{
+        font-size: 25px;    
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    #ABOUT article{
+        font-size: 20px;
+    }
+    #SKILLSET .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #PROJECTS .grid-container{
+        grid-template-columns: repeat(1, 0fr);
+        justify-content: center;
+    }
+}
+
+@media (max-width:450px) {
+    .nav{
+        width: 80%;
+    }
+    .nav:hover{
+        width: 90%;
+    }
+    .nav-text{
+        font-size: 17px;    
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .welcome{
+        padding: 20vh 0;
+    }
+    #ABOUT article{
+        font-size: 15px;
+    }
+    #SKILLSET .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #PROJECTS .grid-container{
+        grid-template-columns: repeat(1, 0fr);
+        justify-content: center;
+    }
+    .job {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .job img {
+        max-width: 250px;
+    }
+    #CONTACT .messageMe {
+        width: 100%;
+    }
+}
