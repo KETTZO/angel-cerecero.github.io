@@ -608,6 +608,10 @@ body {
         grid-template-columns: repeat(2, 0fr);
         justify-content: center;
     }
+    #PROJECTS .grid-container{
+        grid-template-columns: repeat(1, 0fr);
+        justify-content: center;
+    }
 }
 
 @media (max-width:580px) {
